@@ -17,14 +17,9 @@ btnInsert.addEventListener("click",
     function () {
         let food = userInsert.value;
         arrayFood.push(food);
-        let i = 0;
-        while (i < arrayFood.length) {
-            thisFood = arrayFood[i];
-            const elementLi = document.createElement("li");
-            elementLi.append(thisFood);
-            listUl.append(elementLi);
-            i++;
-        }
+        const elementLi = document.createElement("li");
+        elementLi.append(food);
+        listUl.append(elementLi);
     }
 )
 
